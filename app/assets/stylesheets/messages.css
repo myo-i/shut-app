@@ -12,6 +12,32 @@
   background-color: #253141;
   height: 100px;
   padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.side-name a{
+  font-size: 16px;
+  color: #fafafa;
+  text-decoration: none;
+}
+
+.room-name {
+  padding: 20px 0 40px 0;
+}
+
+.room-name a {
+  color: white;
+  text-decoration: none;
+}
+
+.create-chat {
+  font-size: 10px;
+  color: deepskyblue;
+  border: 1px solid lightblue;
+  padding: 14px;
+  text-decoration: none;
 }
 
 .side-room {
