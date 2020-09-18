@@ -8,37 +8,7 @@
 </div>
 
 <div class="chat-area">
-  <div class="main-content">
-    <div class="top-content">
-      <div class="user-name">
-        エビ地蔵
-      </div>
-      <div class="created-at">
-        2020/6/76(wed) 12:23:34
-      </div>
-    </div>
-    
-      <div class="user-comment">
-        おいっす〜
-      </div>
-    
-  </div>
-
-  <div class="main-content">
-    <div class="top-content">
-      <div class="user-name">
-        エビ地蔵
-      </div>
-      <div class="created-at">
-        2020/6/76(wed) 12:23:34
-      </div>
-    </div>
-    
-      <div class="user-comment">
-        おいっす〜
-      </div>
-    
-  </div>
+  <%= render partial: 'message', collection: @messages %>
 </div>
 
 <%= form_with model: [@room, @message], html: {class: "form"}, local: true do |f|%>
